@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Biodata</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Section 1 - Menu */
+    nav {
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    /* Section 2 - Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 20px;
+      background-color: #f4f4f4;
+    }
+
+    .header .title {
+      max-width: 50%;
+    }
+
+    .header .title h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .header .title p {
+      font-size: 18px;
+    }
+
+    .header img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Section 3 - Biodata */
+    .biodata {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #eaeaea;
+    }
+
+    .biodata-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .biodata-box h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    /* Section 4 - Portofolio */
+    .portfolio {
+      padding: 40px 20px;
+    }
+
+    .portfolio h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Menu -->
+  <nav>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#biodata">Biodata</a></li>
+      <li><a href="#portofolio">Portofolio</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section 2: Judul dan Gambar -->
+  <section class="header" id="home">
+    <div class="title">
+      <h1>Halo, Saya John Doe</h1>
+      <p>Seorang desainer grafis dan web developer yang kreatif dan berdedikasi.</p>
+    </div>
+    <img src="https://via.placeholder.com/300" alt="Foto Profil">
+  </section>
+
+  <!-- Section 3: Biodata -->
+  <section class="biodata" id="biodata">
+    <div class="biodata-box">
+      <h3>Nama</h3>
+      <p>John Doe</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Tanggal Lahir</h3>
+      <p>1 Januari 1995</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Alamat</h3>
+      <p>Jl. Mawar No. 123, Jakarta</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Email</h3>
+      <p>john.doe@email.com</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Telepon</h3>
+      <p>0812-3456-7890</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Hobi</h3>
+      <p>Desain, Fotografi, Coding</p>
+    </div>
+  </section>
+
+  <!-- Section 4: Portofolio -->
+  <section class="portfolio" id="portofolio">
+    <h2>Portofolio</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Proyek</th>
+          <th>Tahun</th>
+          <th>Deskripsi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Website Company Profile</td>
+          <td>2023</td>
+          <td>Membangun situs web untuk perusahaan konstruksi.</td>
+        </tr>
+        <tr>
+          <td>Desain Logo UMKM</td>
+          <td>2022</td>
+          <td>Mendesain logo untuk berbagai UMKM lokal.</td>
+        </tr>
+        <tr>
+          <td>Landing Page Event</td>
+          <td>2021</td>
+          <td>Halaman promosi acara teknologi tahunan.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>
